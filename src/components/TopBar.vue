@@ -55,7 +55,7 @@
           </MenuItem>
           <MenuItem v-slot="{ active }">
             <a
-              href="#"
+              href="/help"
               :class="{ 'bg-gray-100': active }"
               class="block py-2 px-4 text-sm text-gray-700"
               >Help</a
@@ -63,7 +63,7 @@
           </MenuItem>
           <MenuItem v-slot="{ active }">
             <a
-              href="/accounts/logout"
+              href="/account/logout"
               :class="{ 'bg-gray-100': active }"
               class="block py-2 px-4 text-sm text-gray-700"
               >Log out</a

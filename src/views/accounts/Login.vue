@@ -22,7 +22,7 @@
                     </button>
                 </div>
                 <div class="text-center mt-2">
-                    <a class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800" href="/signup">Create an Account!</a>
+                    <a class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800" href="/account/sign-up">Create an Account!</a>
                 </div>
             </Form>
             </div>

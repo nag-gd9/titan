@@ -59,7 +59,7 @@
  
 <script setup>
 import {Dialog, DialogOverlay, TransitionChild, TransitionRoot} from '@headlessui/vue';
-import {MagnifyingGlassIcon, HomeIcon, BackspaceIcon, IdentificationIcon, BuildingLibraryIcon, UserIcon, ArrowPathIcon, RectangleGroupIcon,
+import {MagnifyingGlassIcon, HomeIcon, BackspaceIcon, IdentificationIcon, BuildingLibraryIcon, UserIcon, ArrowPathIcon, RectangleGroupIcon, EnvelopeIcon,
         BookOpenIcon, TicketIcon, ClipboardDocumentIcon, StopIcon } from '@heroicons/vue/24/outline/index.js';
 import Logo from "./Logo.vue";
 import NavItem from "./NavItem.vue";
@@ -67,6 +67,7 @@ import SearchCenterMOdel from "../components/center/SearchCenterModel.vue"
 import { GeneralStore, AUTH } from '@/stores';
 import { useToast } from 'vue-toastification';
 import { useEvents } from '../services/events';
+import { EnvelopeOpenIcon } from '@heroicons/vue/24/solid';
 
 const event = useEvents()
 
@@ -75,34 +76,39 @@ const navItems = [
 	{
 		href: "#", active: false,
 		label: "Account",
+        icon: IdentificationIcon,
 		children: [
-			{ href: "/accounts/me", active: false, label: "Me", children: [], icon: UserIcon },
-			{ href: "/accounts/reset-password", active: false, label: "Reset Password", children: [], icon: ArrowPathIcon },
+			{ href: "/account/me", active: false, label: "Me", children: [], icon: UserIcon },
+            { href: "/account/mail", active: false, label: "Mail", children: [], icon: EnvelopeOpenIcon },
+			{ href: "/account/reset-password", active: false, label: "Reset Password", children: [], icon: ArrowPathIcon },
+            
 		],
-		icon: IdentificationIcon,
+		
 	},
 	{
 		href: "#", active: false,
 		label: "Center",
+        icon: BuildingLibraryIcon,
 		children: [
 			{ href: "/center", active: false, label: "My Centers", children: [], icon: MagnifyingGlassIcon },
             { href: "/center/course", active: false, label: "Course", children: [], icon: BookOpenIcon },
             { href: "/center/offer", active: false, label: "Offerings", children: [], icon: TicketIcon },
             { href: "/center/student", active: false, label: "Students", children: [], icon: UserIcon },
-			{ href: "/center/22/232", active: false, label: "Admin", children: [], icon: RectangleGroupIcon },
+			{ href: "/center/1", active: false, label: "Admin", children: [], icon: RectangleGroupIcon },
 		],
-		icon: BuildingLibraryIcon,
+		
 	},
     {
 		href: "#", active: false,
 		label: "Exams",
+        icon: ClipboardDocumentIcon,
 		children: [
 			{ href: "/results", active: false, label: "Results", children: [], icon: StopIcon },
             { href: "/quiz", active: false, label: "Quiz", children: [], icon: StopIcon },
             { href: "/question", active: false, label: "Questions", children: [], icon: StopIcon },
             { href: "/assesment", active: false, label: "Assesments", children: [], icon: StopIcon },
 		],
-		icon: ClipboardDocumentIcon,
+		
 	},
     
 ];

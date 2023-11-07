@@ -2,51 +2,246 @@
 
 <template>
 
-	
-
-    <div class="md:p-12 xl:container">
-        <div aria-hidden="true" class="w-96 h-32 rotate-45 bg-gradient-to-r from-primaryLight to-secondaryLight blur-3xl opacity-50 dark:opacity-20"></div>
-        <div class="lg:flex lg:items-center lg:gap-12">
-            <div class="text-center lg:text-left md:mt-12 lg:mt-0 sm:w-10/12 md:w-2/3 sm:mx-auto lg:mr-auto lg:w-6/12">
-                <h1 class="text-yellow-500 font-bold text-4xl md:text-6xl lg:text-5xl xl:text-6xl dark:text-white"> Transform Rural Education With Your <span class="text-blue-500 dark:text-primaryLight">Support.</span></h1>
-                <p class="mt-8 text-green-600 dark:text-gray-300">We help connecting to you teach children of rural India</p>
-                <div>
-                    <form action="" class="w-full mt-12">
-                        <div class="relative flex items-center px-2 p-1 rounded-full bg-white dark:bg-gray-900 border dark:border-gray-700 border-primary/10 shadow-md">
-                            <div class="pl-6 py-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 m-auto fill-blue-900/60 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+    <div class="flex flex-col space-y-8 p-8">
+        <!-- First Row -->
+        <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-5 px-4 xl:p-0 gap-y-4 md:gap-6">
+            <div class="md:col-span-2 xl:col-span-3 bg-gray-200 p-6 rounded-2xl border border-gray-50">
+                <div class="flex flex-col space-y-6 md:h-full md:justify-between">
+                    <div class="flex justify-between">
+                        <span class="text-xs text-gray-500 font-semibold uppercase tracking-wider">
+                            Main Account
+                        </span>
+                        <span class="text-xs text-gray-500 font-semibold uppercase tracking-wider">
+                            Available Funds
+                        </span>
+                    </div>
+                    <div class="flex gap-2 md:gap-4 justify-between items-center">
+                        <div class="flex flex-col space-y-4">
+                            <h2 class="text-gray-800 font-bold tracking-widest leading-tight">Derol's Savings
+                                Account</h2>
+                            <div class="flex items-center gap-4">
+                                <p class="text-lg text-gray-600 tracking-wider">**** **** *321</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </div>
-                            <input autocomplete="email" placeholder="Your mail address" class="w-full p-4 rounded-full placeholder-gray-600 dark:placeholder-white bg-transparent" type="email">
-                            <div class="md:pr-1.5 lg:pr-0">
-                                <button type="button" title="Start buying" class="relative h-12 w-20 sm:w-auto ml-auto sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
-                                    <span class="relative hidden w-max text-white dark:text-gray-900 font-semibold md:block">
-    Get Started
-                                    </span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="relative h-6 w-6 mx-auto text-white dark:text-gray-900 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                    </svg>
-                                </button>
-                            </div>
                         </div>
-                    </form>
-                </div>
-                <div class="mt-12 flex gap-6 lg:gap-12 justify-between grayscale dark:grayscale-0">
-                    <img src="../assets/img/wagtail.jpg" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
-                    <img src="../assets/img/wagtail.jpg" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
-                    <img src="../assets/img/wagtail.jpg" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
-                    <img src="../assets/img/wagtail.jpg" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                        <h2 class="text-lg md:text-xl xl:text-3xl text-gray-700 font-black tracking-wider">
+                            <span class="md:text-xl">$</span>
+                            92,817.45
+                        </h2>
+                    </div>
+                    <div class="flex gap-2 md:gap-4">
+                        <a href="#"
+                            class="bg-blue-600 px-5 py-3 w-full text-center md:w-auto rounded-lg text-white text-xs tracking-wider font-semibold hover:bg-blue-800">
+                            Transfer Money
+                        </a>
+                        <a href="#"
+                            class="bg-blue-50 px-5 py-3 w-full text-center md:w-auto rounded-lg text-blue-600 text-xs tracking-wider font-semibold hover:bg-blue-600 hover:text-white">
+                            Link Account
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="w-full lg:w-7/12 rounded-xl">
-                <img src="../assets/img/child.jpg" alt="project illustration" height="" width="">
+            <div
+                class="col-span-2 p-6 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-800 flex flex-col justify-between">
+                <div class="flex flex-col">
+                    <p class="text-white font-bold">Lorem ipsum dolor sit amet</p>
+                    <p class="mt-1 text-xs md:text-sm text-gray-50 font-light leading-tight max-w-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio soluta saepe consequuntur
+                        facilis ab a. Molestiae ad saepe assumenda praesentium rem dolore? Exercitationem, neque
+                        obcaecati?
+                    </p>
+                </div>
+                <div class="flex justify-between items-end">
+                    <a href="#"
+                        class="bg-blue-800 px-4 py-3 rounded-lg text-white text-xs tracking-wider font-semibold hover:bg-blue-600 hover:text-white">
+                        Learn More
+                    </a>
+                    <img src="https://atom.dzulfarizan.com/assets/calendar.png" alt="calendar" class="w-auto h-24 object-cover">
+                </div>
+            </div>
+
+        </div>
+        <!-- End First Row -->
+        <!-- Start Second Row -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 xl:p-0 gap-4 xl:gap-6">
+            <div class="col-span-1 md:col-span-2 lg:col-span-4 flex justify-between">
+                <h2 class="text-xs md:text-sm text-gray-700 font-bold tracking-wide md:tracking-wider">
+                    Expenses By Category</h2>
+                <a href="#" class="text-xs text-gray-800 font-semibold uppercase">More</a>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-50">
+                <div class="flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-600 tracking-wide">Foods & Beverages</p>
+                        <h3 class="mt-1 text-lg text-blue-500 font-bold">$ 818</h3>
+                        <span class="mt-4 text-xs text-gray-500">Last Transaction 3 Hours ago</span>
+                    </div>
+                    <div class="bg-blue-500 p-2 md:p-1 xl:p-2 rounded-md">
+                        <img src="https://atom.dzulfarizan.com/assets/dish-2.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-50">
+                <div class="flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-600 tracking-wide">Groceries</p>
+                        <h3 class="mt-1 text-lg text-green-500 font-bold">$ 8,918</h3>
+                        <span class="mt-4 text-xs text-gray-500">Last Transaction 3 Days ago</span>
+                    </div>
+                    <div class="bg-green-500 p-2 md:p-1 xl:p-2 rounded-md">
+                        <img src="https://atom.dzulfarizan.com/assets/grocery.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-50">
+                <div class="flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-600 tracking-wide">Gaming</p>
+                        <h3 class="mt-1 text-lg text-yellow-500 font-bold">$ 1,223</h3>
+                        <span class="mt-4 text-xs text-gray-600">Last Transaction 4 Days ago</span>
+                    </div>
+                    <div class="bg-yellow-500 p-2 md:p-1 xl:p-2 rounded-md">
+                        <img src="https://atom.dzulfarizan.com/assets/gaming.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-50">
+                <div class="flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-600 tracking-wide">Trip & Holiday</p>
+                        <h3 class="mt-1 text-lg text-indigo-500 font-bold">$ 5,918</h3>
+                        <span class="mt-4 text-xs text-gray-500">Last Transaction 1 Month ago</span>
+                    </div>
+                    <div class="bg-indigo-500 p-2 md:p-1 xl:p-2 rounded-md">
+                        <img src="https://atom.dzulfarizan.com/assets/holiday.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                    </div>
+                </div>
             </div>
         </div>
-    </div> 
-                                        
-    </template>
+        <!-- End Second Row -->
+        <!-- Start Third Row -->
+        <div class="grid grid-cols-1 md:grid-cols-5 items-start px-4 xl:p-0 gap-y-4 md:gap-6">
+            <div class="col-start-1 col-end-5">
+                <h2 class="text-xs md:text-sm text-gray-800 font-bold tracking-wide">Summary Transactions</h2>
+            </div>
+            <div class="col-span-2 bg-white p-6 rounded-xl border border-gray-50 flex flex-col space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 flex justify-between items-center">
+                    <div class="p-4 cursor-pointer border">
+                        <span class="text-xs text-gray-500 font-semibold">Daily</span>
+                        <h2 class="text-gray-800 font-bold tracking-wider">$ 27.80</h2>
+                    </div>
+                    <div class="p-4 cursor-pointer border">
+                        <span class="text-xs text-gray-500 font-semibold">Weekly</span>
+                        <h2 class="text-gray-800 font-bold tracking-wider">$ 192.92</h2>
+                    </div>
+                    <div class="p-4 cursor-pointer border">
+                        <span class="text-xs text-gray-500 font-semibold">Monthly</span>
+                        <h2 class="text-gray-800 font-bold tracking-wider">$ 501.10</h2>
+                    </div>
+                </div>
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="col-span-3 bg-white p-6 rounded-xl border border-gray-50 flex flex-col space-y-6">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-sm text-gray-600 font-bold tracking-wide">Latest Transactions</h2>
+                    <a href="#"
+                        class="px-4 py-2 text-xs bg-blue-100 text-blue-500 rounded uppercase tracking-wider font-semibold hover:bg-blue-300">More</a>
+                </div>
+                <ul class="divide-y-2 divide-gray-100 overflow-x-auto w-full">
+                    <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
+                        <p class="px-4 font-semibold">Today</p>
+                        <p class="px-4 text-gray-600">McDonald</p>
+                        <p class="px-4 tracking-wider">Cash</p>
+                        <p class="px-4 text-blue-600">Food</p>
+                        <p class="md:text-base text-gray-800 flex items-center gap-2">
+                            16.90
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </p>
+                    </li>
+                    <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
+                        <p class="px-4 font-semibold">Today</p>
+                        <p class="px-4 text-gray-600">McDonald</p>
+                        <p class="px-4 tracking-wider">Cash</p>
+                        <p class="px-4 text-blue-600">Food</p>
+                        <p class="md:text-base text-gray-800 flex items-center gap-2">
+                            16.90
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </p>
+                    </li>
+                    <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
+                        <p class="px-4 font-semibold">Today</p>
+                        <p class="px-4 text-gray-600">McDonald</p>
+                        <p class="px-4 tracking-wider">Cash</p>
+                        <p class="px-4 text-blue-600">Food</p>
+                        <p class="md:text-base text-gray-800 flex items-center gap-2">
+                            16.90
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </p>
+                    </li>
+                    <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
+                        <p class="px-4 font-semibold">Today</p>
+                        <p class="px-4 text-gray-600">McDonald</p>
+                        <p class="px-4 tracking-wider">Cash</p>
+                        <p class="px-4 text-blue-600">Food</p>
+                        <p class="md:text-base text-gray-800 flex items-center gap-2">
+                            16.90
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </p>
+                    </li>
+                    <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
+                        <p class="px-4 font-semibold">Today</p>
+                        <p class="px-4 text-gray-600">McDonald</p>
+                        <p class="px-4 tracking-wider">Cash</p>
+                        <p class="px-4 text-blue-600">Food</p>
+                        <p class="md:text-base text-gray-800 flex items-center gap-2">
+                            16.90
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </p>
+                    </li>
+                    <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
+                        <p class="px-4 font-semibold">Today</p>
+                        <p class="px-4 text-gray-600">McDonald</p>
+                        <p class="px-4 tracking-wider">Cash</p>
+                        <p class="px-4 text-blue-600">Food</p>
+                        <p class="md:text-base text-gray-800 flex items-center gap-2">
+                            16.90
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Third Row -->
+    </div>	                    
+</template>
     
     
     

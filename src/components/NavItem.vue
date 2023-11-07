@@ -32,7 +32,7 @@ const general_store = GeneralStore()
     <component
       :class="[
         'mr-2 h-6 w-6 shrink-0 group-hover:text-lime-500',
-        item.active ? 'text-lime-500' : 'text-gray-400',
+        item.active ? 'text-lime-500' : 'text-gray-600',
       ]"
       :is="item.icon"
       v-if="item.icon"
@@ -50,7 +50,7 @@ const general_store = GeneralStore()
       :class="[
         'group flex w-full items-center rounded-md py-2 px-3 text-left text-xs',
         'hover:bg-gray-100',
-        open ? 'font-semibold text-lime-500' : 'font-medium text-gray-600',
+        open ? 'font-semibold text-lime-600' : 'font-medium text-gray-900',
       ]"
     >
       <component

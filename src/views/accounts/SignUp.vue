@@ -87,7 +87,7 @@
                 </div>
                 <div class="flex -mx-3">
                   <div class="w-full px-3 mb-5">
-                    <button
+                    <button type="submit"
                       class="block w-full max-w-xs mx-auto bg-green-500 hover:bg-green-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
                     >
                       REGISTER NOW
@@ -96,7 +96,7 @@
                 </div>
                 <div class="flex -mx-3">
                   <div class="w-full px-3 mb-5">
-                    <router-link to="/login"
+                    <router-link to="/account/login"
                       ><button
                         class="block w-full max-w-xs mx-auto bg-red-500 hover:bg-red-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
                       >
@@ -136,13 +136,14 @@ export default {
         email: this.email,
         username: parseInt('1000000'),
         password: this.password,
+        password2: this.password,
           }
 
         console.log(formData)
           axios
-              .post('/api/v1/auth/users/', formData)
+              .post('/auth/sign-up/', formData)
               .then(response => {
-                  this.$router.push('/login')
+                  this.$router.push('/')
                 console.log(response)
               })
               .catch(error => {

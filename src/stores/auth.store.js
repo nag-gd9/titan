@@ -20,14 +20,6 @@ export const AUTH = defineStore({
                 this.user.token = response.data;
                 // store user details and jwt in local storage to keep user logged in between page refreshes
                 localStorage.setItem('token', JSON.stringify(response.data));
-                let roles = []
-                axios.get('/api/v1/profile/', {}).then(function (response) {
-                    console.log(response);
-                    roles = response.data.groups
-                })
-                this.user.roles = roles
-
-                
                 // redirect to previous url or default to home page
                 router.push(this.returnUrl || '/');
             }
@@ -48,7 +40,12 @@ export const AUTH = defineStore({
             });
         },
         user_data() {
-            
+            let roles = []
+            axios.get('/api/v1/profile/', {}).then(function (response) {
+                console.log(response);
+                roles = response.data.groups
+            })
+            this.user.roles = roles
         }
     }
 });

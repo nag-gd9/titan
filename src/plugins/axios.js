@@ -2,13 +2,13 @@ import axios from 'axios'
 import { AUTH } from '@/stores'
 
 
-const token = JSON.parse(localStorage.getItem('token'))
+var token = JSON.parse(localStorage.getItem('token'))
 const AUTH_TOKEN = token ? `Bearer ${token.access}` : ''
 
 window.axios = axios
 axios.defaults.baseURL = import.meta.env.VITE_API_URL
 if (AUTH_TOKEN){
-  axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+  axios.defaults.headers.common = {'Authorization' : AUTH_TOKEN};
 }
 // axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 // axios.defaults.headers.post['Content-Type'] = 'application/json';
@@ -19,8 +19,10 @@ axios.interceptors.request.use(function (config) {
     return config;
   }, function (error) {
     // Do something with request error
+    console.log(error)
     return Promise.reject(error);
 });
+
   
 
 axios.interceptors.response.use(function (response) {

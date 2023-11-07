@@ -19,32 +19,36 @@ const columns = [
 const options = {
   dom: 'Bftip',
   select: true,
+  responsive: true,
 };
 </script>
 
 <template>
-	<div class="w-full flex items-center justify-center">
-		<div class="w-9/12 mt-20 text-xs">
-			<DataTable
-			:columns="columns"
-			:options="options"
-			ajax="/data.json"
-			class="display"
-			width="100%"
-			>
-			
-			<thead>
-				<tr>
-				<th>Name</th>
-				<th>Position</th>
-				<th>Office</th>
-				<th>Extn.</th>
-				<th>Start date</th>
-				<th>Salary</th>
-				</tr>
-			</thead>
-			
-			</DataTable>
+	<div class="w-full flex items-center justify-left ml-10">
+		<div class="bg-white rounded md:border-l-4 border-red-300 my-4">
+			<div class="text-left text-xs font-bold p-1 text-red-800 border-t bg-red-50">My Centers [57]</div>
+			<div class="text-xs">
+				<DataTable
+				:columns="columns"
+				:options="options"
+				ajax="/data.json"
+				class="display"
+				width="100%"
+				>
+				
+				<thead>
+					<tr>
+					<th>Name</th>
+					<th>Position</th>
+					<th>Office</th>
+					<th>Extn.</th>
+					<th>Start date</th>
+					<th>Salary</th>
+					</tr>
+				</thead>
+				
+				</DataTable>
+			</div>
 		</div>
 	</div>
 </template>
